@@ -1,0 +1,39 @@
+# https://raw.githubusercontent.com/thoughtbot/hound/master/config/style_guides/ruby.yml
+
+AllCops:
+  TargetRubyVersion: 2.3.3
+  Exclude:
+    - 'docs/**'
+
+AbcSize:
+  Enabled: false
+AmbiguousOperator:
+  Enabled: false
+ExtraSpacing:
+  Enabled: false
+Layout/AlignArray:
+  Enabled: false
+Layout/AlignHash:
+  Enabled: false
+Layout/AlignParameters:
+  Enabled: false
+Layout/SpaceBeforeFirstArg:
+  Enabled: false
+Layout/MultilineOperationIndentation:
+  Enabled: false
+MultilineMethodCallIndentation:
+  Enabled: false
+PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%w': '()'
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/ParenthesesAroundCondition:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
