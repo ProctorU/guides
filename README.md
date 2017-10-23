@@ -1,3 +1,5 @@
+# Guides
+
 Guides is a foundation of best practices used by ProctorU's Engineering & Design team, with inspiration from the [Thoughtbot Guides](https://github.com/thoughtbot/guides).
 
 ## Table of contents
