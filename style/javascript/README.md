@@ -44,7 +44,7 @@ augroup END
 - Prefer to auto-bind in the constructor.
 
     ```es6
-    # good
+    // good
     class UserForm {
       constructor() {
         this.countrySelectEl = document.querySelector();
