@@ -39,4 +39,4 @@ Time.strptime(string, "%Y-%m-%dT%H:%M:%S%z").in_time_zone
 ##### Testing timezones
 
 Never set `Time.zone = 'Something'` because it could persist through the entire test class and throw off other tests.
-- Use timezone helpers to setup & teardown timezones
+- Use timezone helpers to setup & teardown timezones `Time.use_zone(tz, &block)` or `set_timezone(tz)` with `reset_timezone()`
