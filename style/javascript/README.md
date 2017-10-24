@@ -21,7 +21,7 @@ In additional to the following guidelines, please also install and use [Prettier
 1. Install the [vim-prettier](https://github.com/prettier/vim-prettier) plugin using [vim-plug](https://github.com/junegunn/vim-plug)
 1. Add the following to your ~/.vimrc to the appropriate places
 
-```vimrc
+```viml
 " Load vim-prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
