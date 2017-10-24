@@ -6,7 +6,7 @@ In additional to the following guidelines, please also install and use [Prettier
 
 *Atom*
 1. Install the [`prettier-atom`](https://atom.io/packages/prettier-atom) package.
-1. Configure the settings with the following defaults (added to `~/.atom/config.cson`).
+1. Configure the settings with the following changes (added to `~/.atom/config.cson`).
 
   ```cson
   "prettier-atom":
