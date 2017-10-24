@@ -24,6 +24,7 @@ In additional to the following guidelines, please also use the [.rubocop.yml](./
     Time.zone.parse("2015-07-04 17:05:37")
     Time.strptime(string, "%Y-%m-%dT%H:%M:%S%z").in_time_zone
     ```
+- Prefer `size` over `count` or `length`. [Reference](https://stackoverflow.com/a/6083229/2456549).
 
 ##### Testing
 - Prefer `assert_not` over `refute`.
