@@ -28,18 +28,18 @@ In additional to the following guidelines, please also use the [.rubocop.yml](./
 ##### Testing
 - Prefer `assert_not` over `refute`.
 - Never set `Time.zone = 'Something'` because it could persist through the entire test class and throw off other tests.
-  - Use timezone helpers to setup & teardown timezones.
+- Use timezone helpers to setup & teardown timezones.
 
-  ```ruby
-  Time.use_zone(tz, &block)
+    ```ruby
+    Time.use_zone(tz, &block)
   
-  # or
+    # or
   
-  def setup
-    set_timezone(tz)
-  end
+    def setup
+      set_timezone(tz)
+    end
   
-  def teardown
-    reset_timezone()
-  end
-  ```
+    def teardown
+      reset_timezone()
+    end
+    ```
