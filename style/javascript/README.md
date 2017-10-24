@@ -41,3 +41,19 @@ augroup END
 ##### General
 - Prefer `const` and `let` over `var`.
 - Prefer to exclude jQuery from new projects.
+- Prefer to auto-bind in the constructor.
+
+    ```es6
+    # good
+    class UserForm {
+      constructor() {
+        this.countrySelectEl = document.querySelector();
+        
+        this.handleClick = this.handleClick.bind(this);
+      }
+   
+      bindEventListeners() {
+        this.countrySelectEl.addEventListener('click', this.handleClick);
+      }
+    }
+    ```
