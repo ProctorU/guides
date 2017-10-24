@@ -10,6 +10,7 @@ Guides is a foundation of best practices used by ProctorU's Engineering & Design
 ## Guides
 
 - [Code Review](./code-review)
+- [Best Practices](./best-practices)
 - Style
   - [Ruby](./style/ruby)
   - [JavaScript](./style/javascript)
