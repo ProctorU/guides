@@ -5,6 +5,7 @@ In additional to the following guidelines, please also use the [.rubocop.yml](./
 ##### General
 - Prefer `&&` and `||` over `and` and `or`.
 - Prefer `map` over `collect`.
+- Prefer `cookies.signed` over `cookies` to prevent [tampering](http://blog.bigbinary.com/2013/03/19/cookies-on-rails.html).
 - Add `touch: true` when declaring `belongs_to` associations.
 - Add `dependent: :destroy` for has_many associations.
 - Use only one instance variable in views.
