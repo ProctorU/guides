@@ -11,3 +11,7 @@ A simple guide for coding in style.
 ##### URLs
 
 - Prefer dashes over underscores in paths. [Reference](https://support.google.com/webmasters/answer/76329?hl=en).
+
+##### Files
+
+- Files should have a trailing whitespace at the end of the file.  Set your text editor to do this for you automatically.
