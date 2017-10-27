@@ -5,15 +5,18 @@ Guides is a foundation of best practices used by ProctorU's Engineering & Design
 ## Table of contents
 
 - [Guides](#guides)
+- [Style](#style)
 - [Credits](#credits)
 
 ## Guides
 
 - [Best Practices](./best-practices)
 - [Code Review](./code-review)
-- Style
-  - [Ruby](./style/ruby)
-  - [JavaScript](./style/javascript)
+- [Rails Tips](./rails-tips)
+
+## Style
+- [Ruby](./style/ruby)
+- [JavaScript](./style/javascript)
 
 ## Credits
 
