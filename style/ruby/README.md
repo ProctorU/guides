@@ -5,10 +5,10 @@ In additional to the following guidelines, please also use the [.rubocop.yml](./
 ##### General
 - Prefer `&&` and `||` over `and` and `or`.
 - Prefer `map` over `collect`.
-- Add `touch: true` when declaring `belongs_to` associations
-- Add `dependent: :destroy` for has_many associations
-- Use only one instance variable in views
-- Use only local variables in partials
+- Add `touch: true` when declaring `belongs_to` associations.
+- Add `dependent: :destroy` for has_many associations.
+- Use only one instance variable in views.
+- Use only local variables in partials.
 - Times & Dates should always be stored as UTC in the database. We should _never_ store times with offsets. If you need context, [read this article by thoughtbot](https://robots.thoughtbot.com/its-about-time-zones). 
 
     ```ruby
