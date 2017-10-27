@@ -31,6 +31,16 @@ In additional to the following guidelines, please also use the [.rubocop.yml](./
     ```
 - Prefer `size` over `count` or `length`. [Reference](https://stackoverflow.com/a/6083229/2456549).
 
+- Use `ENV.fetch('VARNAME')` instead of ENV. This will raise an error on deployment so developers can easily tell when they are missing ENVs.
+
+    ```ruby
+    # bad
+    ENV['STRIPE_API_KEY']
+    
+    # good
+    ENV.fetch('STRIPE_API_KEY')
+    ```
+
 ##### Testing
 - Prefer `assert_not` over `refute`.
 - Never set `Time.zone = 'Something'` because it could persist through the entire test class and throw off other tests.
