@@ -7,7 +7,7 @@ At ProctorU, any change to the `master` branch will, at minimum, go through two 
 - Avoid selective ownership of code. ("mine", "not mine", "yours")
 - Always ask for clarification if you are unsure about something.
 - Keep it real and fun. Use emojies, gifs, etc. :+1:
-- 
+- Give back your time to code review, like others do for you.
 
 ##### Having Your Code Reviewed
 
