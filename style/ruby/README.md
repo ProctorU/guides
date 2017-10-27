@@ -49,3 +49,28 @@ In additional to the following guidelines, please also use the [.rubocop.yml](./
       reset_timezone()
     end
     ```
+- Use MiniTest::Spec over Test::Unit.
+
+    ```ruby
+
+    # good
+
+    setup do
+      @user = users(:default)
+    end
+    
+    test 'user should do something fancy' do
+      assert @user.dances
+    end
+
+    # bad
+
+    def setup
+      @user = users(:default)
+    end
+
+    def user_should_do_something_fancy
+      assert @user.dances
+    end
+
+    ```
