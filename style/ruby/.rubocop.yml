@@ -17,6 +17,8 @@ Layout/AlignHash:
   Enabled: false
 Layout/AlignParameters:
   Enabled: false
+Layout/DotPosition:
+  Enabled: false
 Layout/SpaceBeforeFirstArg:
   Enabled: false
 Layout/MultilineOperationIndentation:
