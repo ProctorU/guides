@@ -4,6 +4,8 @@ AllCops:
   TargetRubyVersion: 2.3.3
   Exclude:
     - 'docs/**'
+    - 'db/schema.rb'
+    - 'db/structure.sql'
 
 AbcSize:
   Enabled: false
