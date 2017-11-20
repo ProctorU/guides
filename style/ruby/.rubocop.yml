@@ -13,17 +13,17 @@ AmbiguousOperator:
   Enabled: false
 ExtraSpacing:
   Enabled: false
-Layout/AlignArray:
+Style/AlignArray:
   Enabled: false
-Layout/AlignHash:
+Style/AlignHash:
   Enabled: false
-Layout/AlignParameters:
+Style/AlignParameters:
   Enabled: false
 Layout/DotPosition:
   EnforcedStyle: trailing
-Layout/SpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Enabled: false
-Layout/MultilineOperationIndentation:
+Style/MultilineOperationIndentation:
   Enabled: false
 MultilineMethodCallIndentation:
   Enabled: false
