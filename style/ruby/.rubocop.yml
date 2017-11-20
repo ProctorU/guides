@@ -20,7 +20,7 @@ Layout/AlignHash:
 Layout/AlignParameters:
   Enabled: false
 Layout/DotPosition:
-  Enabled: false
+  EnforcedStyle: trailing
 Layout/SpaceBeforeFirstArg:
   Enabled: false
 Layout/MultilineOperationIndentation:
