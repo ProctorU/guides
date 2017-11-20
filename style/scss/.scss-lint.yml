@@ -1,0 +1,38 @@
+# Here's a link to all the default configurations
+# https://github.com/causes/scss-lint/blob/master/config/default.yml
+
+exclude:
+  - 'docs/**'
+  - 'node_modules/**'
+  - 'vendor/assets/**'
+
+linters:
+  ColorVariable:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  EmptyRule:
+    enabled: false
+
+  ImportantRule:
+    enabled: false
+
+  NameFormat:
+    enabled: false
+
+  NestingDepth:
+    enabled: false
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+
+  TrailingZero:
+    enabled: false
