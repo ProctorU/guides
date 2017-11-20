@@ -13,31 +13,33 @@ AmbiguousOperator:
   Enabled: false
 ExtraSpacing:
   Enabled: false
-Style/AlignArray:
-  Enabled: false
-Style/AlignHash:
-  Enabled: false
-Style/AlignParameters:
-  Enabled: false
 Layout/DotPosition:
   EnforcedStyle: trailing
-Style/SpaceBeforeFirstArg:
+Metrics/BlockLength:
   Enabled: false
-Style/MultilineOperationIndentation:
-  Enabled: false
+Metrics/LineLength:
+  Max: 100
 MultilineMethodCallIndentation:
   Enabled: false
 PercentLiteralDelimiters:
   PreferredDelimiters:
     '%i': '()'
     '%w': '()'
+Style/AlignArray:
+  Enabled: false
+Style/AlignHash:
+  Enabled: false
+Style/AlignParameters:
+  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
+Style/MultilineOperationIndentation:
+  Enabled: false
 Style/ParenthesesAroundCondition:
   Enabled: false
-Style/StringLiterals:
+Style/SpaceBeforeFirstArg:
   Enabled: false
-Metrics/BlockLength:
+Style/StringLiterals:
   Enabled: false
