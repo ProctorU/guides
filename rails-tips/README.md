@@ -3,7 +3,8 @@
 Rails tips are fun tid-bits of info that aren't best practices or opinionated.
 
 ##### Models
-- Use [`with_options`](https://apidock.com/rails/Object/with_options) to group associations.
+- Use [`with_options`](https://apidock.com/rails/Object/with_options) to
+  group associations.
 
   ```ruby
   class Account < ApplicationRecord
@@ -22,3 +23,21 @@ Rails tips are fun tid-bits of info that aren't best practices or opinionated.
     end
   end
   ```
+
+##### Benchmarking
+- Benchmarking is the best way to determine performance differences between
+  different methods in ruby.
+
+    ```ruby
+    require 'benchmark'
+
+    Benchmark.bmbm do |x|
+      x.report('Thing 1') do
+        # Do some ruby...
+      end
+
+      x.report('Thing 2') do
+        # Do some other ruby...
+      end
+    end
+    ```
