@@ -13,8 +13,6 @@ AmbiguousOperator:
   Enabled: false
 ExtraSpacing:
   Enabled: false
-Layout/DotPosition:
-  EnforcedStyle: trailing
 Metrics/BlockLength:
   Enabled: false
 Metrics/LineLength:
@@ -31,6 +29,8 @@ Style/AlignHash:
   Enabled: false
 Style/AlignParameters:
   Enabled: false
+Style/DotPosition:
+  EnforcedStyle: trailing
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/FrozenStringLiteralComment:
