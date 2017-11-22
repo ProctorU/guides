@@ -1,8 +1,16 @@
-### JavaScript
+# ProctorU Guides
+
+Guides is a foundation of best practices used by ProctorU's Engineering &
+Design team. It includes best practices for Code Reviewing, Style Rules, and
+much more.
+
+---
+
+## JavaScript
 
 In additional to the following guidelines, please also install and use [Prettier](https://github.com/prettier/prettier) with your favorite text editor.
 
-##### Prettier Setup
+### Prettier Setup
 
 *Atom*
 1. Install the [`prettier-atom`](https://atom.io/packages/prettier-atom) package.
@@ -17,6 +25,7 @@ In additional to the following guidelines, please also install and use [Prettier
       parser: "flow"
       singleQuote: true
    ```
+
 *Vim*
 1. Install the [vim-prettier](https://github.com/prettier/vim-prettier) plugin using [vim-plug](https://github.com/junegunn/vim-plug)
 1. Add the following to your ~/.vimrc to the appropriate places
@@ -26,7 +35,7 @@ In additional to the following guidelines, please also install and use [Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
- 
+
 " Configure vim-prettier
 let g:prettier#config#trailing_comma = 'none'
 let g:prettier#config#bracket_spacing = 'true'
@@ -38,7 +47,8 @@ augroup END
 
 ```
 
-##### General
+### General
+
 - Prefer `const` and `let` over `var`.
 - Prefer to exclude jQuery from new projects.
 - Prefer to auto-bind in the constructor.
@@ -48,10 +58,10 @@ augroup END
     class UserForm {
       constructor() {
         this.countrySelectEl = document.querySelector();
-        
+
         this.handleClick = this.handleClick.bind(this);
       }
-   
+
       bindEventListeners() {
         this.countrySelectEl.addEventListener('click', this.handleClick);
       }

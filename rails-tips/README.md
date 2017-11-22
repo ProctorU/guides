@@ -1,8 +1,17 @@
-### Rails Tips
+# ProctorU Guides
+
+Guides is a foundation of best practices used by ProctorU's Engineering &
+Design team. It includes best practices for Code Reviewing, Style Rules, and
+much more.
+
+---
+
+## Rails Tips
 
 Rails tips are fun tid-bits of info that aren't best practices or opinionated.
 
-##### Models
+### Models
+
 - Use [`with_options`](https://apidock.com/rails/Object/with_options) to
   group associations.
 
@@ -24,7 +33,8 @@ Rails tips are fun tid-bits of info that aren't best practices or opinionated.
   end
   ```
 
-##### Benchmarking
+### Benchmarking
+
 - Benchmarking is the best way to determine performance differences between
   different methods in ruby.
 
