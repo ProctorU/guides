@@ -63,6 +63,20 @@ conjunction with [HoundCI](https://houndci.com).
     ENV.fetch('STRIPE_API_KEY')
     ```
 
+- Prefer standard notation over shorthand notation for namespaced classes.
+
+    ```ruby
+    # bad
+    class Students::ReservationsController < Students::BaseController
+    end
+    
+    # good
+    module Students
+      class ReservationsController < Students::BaseController
+      end
+    end
+    ```
+
 ### Testing
 
 - Prefer `assert_not` over `refute`.
