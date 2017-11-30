@@ -51,3 +51,18 @@ Rails tips are fun tid-bits of info that aren't best practices or opinionated.
       end
     end
     ```
+
+### Decorators
+
+Decorators should be used to abstract object presentation away from models,
+controllers, or views (or any other intermediary layer). Objects can be
+"decorated", which adds behavior to the instance.
+
+*Do use decorators for*
+- Things like `@user.first_name` (object presentation)
+- Things where object manipulation is repeated like `name.gsub("-", " ").titleize` in views or date formatting.
+
+*Don't use decorators for*
+- Model logic
+- Complex view logic (Facades are better patterns for that)
+- *Anything* that tries to modify the actual object (ie. saving/updating)
