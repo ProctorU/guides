@@ -50,7 +50,9 @@ augroup END
 ### General
 
 - Prefer `const` and `let` over `var`.
+
 - Prefer to exclude jQuery from new projects.
+
 - Prefer to auto-bind in the constructor.
 
     ```es6
@@ -66,4 +68,15 @@ augroup END
         this.countrySelectEl.addEventListener('click', this.handleClick);
       }
     }
+    ```
+ 
+ - Prefer data-attribute selectors over classes or ids.
+ 
+    ```es6
+    // bad
+    document.querySelector('.btn-upload');
+    document.querySelector('#btn-upload');
+    
+    // good
+    document.querySelector('[data-behavior="upload-avatar"]');
     ```
