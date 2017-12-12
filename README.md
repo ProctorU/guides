@@ -8,6 +8,7 @@ much more.
 
 - [Guides](#guides)
 - [Style](#style)
+- [Protocol](#protocol)
 - [Credits](#credits)
 
 ## Guides
@@ -20,6 +21,10 @@ much more.
 
 - [Ruby](./style/ruby)
 - [JavaScript](./style/javascript)
+
+## Protocol
+
+- [GitHub Labels](./protocol/github/labels)
 
 ## Credits
 
