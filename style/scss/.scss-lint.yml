@@ -19,6 +19,9 @@ linters:
   ImportantRule:
     enabled: false
 
+  LeadingZero:
+    enabled: false
+
   NameFormat:
     enabled: false
 
