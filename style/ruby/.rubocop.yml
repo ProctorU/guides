@@ -23,6 +23,8 @@ PercentLiteralDelimiters:
   PreferredDelimiters:
     '%i': '()'
     '%w': '()'
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
 Style/AlignArray:
   Enabled: false
 Style/AlignHash:
