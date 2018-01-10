@@ -31,6 +31,7 @@ for a deeper understanding of Status labels._
 - Status: Reviewed
 - Status: Revised
 - Status: Ready To Merge
+- Status: Ready To Ship
 - Status: Blocked
 
 **Type**

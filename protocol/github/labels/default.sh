@@ -49,6 +49,7 @@ do
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Status: Reviewed","color":"B7DAD5"}' $ENDPOINT
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Status: Revised","color":"BFDBF7"}' $ENDPOINT
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Status: Ready To Merge","color":"008761"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Status: Ready To Ship","color":"6610f2"}' $ENDPOINT
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Status: Blocked","color":"E21C2C"}' $ENDPOINT
 
   # Type
