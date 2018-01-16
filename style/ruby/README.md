@@ -9,8 +9,8 @@ much more.
 ## Ruby
 
 In additional to the following guidelines, please also use the
-[.rubocop.yml](./.rubocop.yml) configuration file for new projects in
-conjunction with [HoundCI](https://houndci.com).
+[Rubocop](./.rubocop.yml) and [Reek](./config.reek) configuration files for new
+projects.
 
 ### General
 

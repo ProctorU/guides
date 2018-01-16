@@ -29,11 +29,13 @@ guidelines to follow during the review process.
   steps.
 - Be grateful and appreciative to the code reviewer.
 - Help to clear any misconceptions the reviewer may have.
-- Wait until your code has the `ready to merge` label before merging.
+- Wait until your code has the `Status: Review Complete` label.
+- Once your code has the Review Complete label, you can add the 'Status: Ready to Ship' label to signify it's ready for release, assuming you've clarified it's ready to ship with stakeholders (if any). 
 
 ### Reviewing Code
 
 - Understand the change. Understand _why_ the change is being made.
 - Identify areas for refactoring that still solve the problem.
+- Determine if the author needs to add descriptive comments to their classes. If the code is self-documenting it may be skipped. 
 - Add the appropriate label after you have reviewed and approved
-  (`reviewed`, `ready to merge`, or `design approved`).
+  (`Status: Reviewed`, `Status: Review Complete`).
