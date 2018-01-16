@@ -10,7 +10,7 @@ basis.
 ### Adding to Repositories
 
 When adding new repositories to GitHub, you can easily remove the standard
-labels and add our default. We have a [simple shell script](default.sh) that
+labels and add our default. We have a [simple shell script](main.sh) that
 only requires a GitHub Access Token to use. Please reference the script for
 usage instructions.
 
@@ -30,7 +30,7 @@ for a deeper understanding of Status labels._
 - Status: In Review
 - Status: Reviewed
 - Status: Revised
-- Status: Ready To Merge
+- Status: Review Complete
 - Status: Ready To Ship
 - Status: Blocked
 
