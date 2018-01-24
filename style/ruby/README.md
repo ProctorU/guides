@@ -69,7 +69,7 @@ projects.
     # bad
     class Students::ReservationsController < Students::BaseController
     end
-    
+
     # good
     module Students
       class ReservationsController < Students::BaseController
@@ -124,3 +124,24 @@ projects.
       assert @user.dances
     end
     ```
+
+### System Tests
+
+##### Organization
+
+System tests should be structured similar to controller namespaces. Each action should be broken into a corresponding test file. The index action should use the plural namespace or module name.
+
+```
+app
+└─── controllers
+|    └─── users
+|    |   └─── registrations_controller.rb
+system
+└─── users
+|    └─── registrations
+│   │     |   show_registrations_test.rb
+│   │     |   show_registration_test.rb
+│   │     |   create_registration_test.rb
+│   │     |   update_registration_test.rb
+│   │     |   destroy_registration_test.rb
+```
