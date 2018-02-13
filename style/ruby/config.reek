@@ -3,3 +3,7 @@
 
 IrresponsibleModule:
   enabled: false
+TooManyStatements:
+  max_statements: 10
+NestedIterators:
+  max_allowed_nesting: 3
