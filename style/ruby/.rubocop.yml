@@ -25,23 +25,23 @@ PercentLiteralDelimiters:
     '%w': '()'
 Style/Alias:
   EnforcedStyle: prefer_alias_method
-Style/AlignArray:
+Layout/AlignArray:
   Enabled: false
-Style/AlignHash:
+Layout/AlignHash:
   Enabled: false
-Style/AlignParameters:
+Layout/AlignParameters:
   Enabled: false
-Style/DotPosition:
+Layout/DotPosition:
   EnforcedStyle: trailing
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   Enabled: false
 Style/ParenthesesAroundCondition:
   Enabled: false
-Style/SpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
 Style/StringLiterals:
   Enabled: false
