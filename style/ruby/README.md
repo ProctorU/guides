@@ -12,6 +12,46 @@ In additional to the following guidelines, please also use the
 [Rubocop](./.rubocop.yml) and [Reek](./config.reek) configuration files for new
 projects.
 
+### Local Configuration
+
+It's always beneficial to have your favorite text editor linting your code
+against the same configuration you use in your CI process. Here are some
+text editor implementations for Rubocop and Reek.
+
+**Atom**
+
+1. Install `rubocop` and `reek` as gems.
+
+    ```
+    gem install rubocop reek
+    ```
+
+1. Install the [linter-rubocop](https://atom.io/packages/linter-rubocop) Atom
+   package.
+
+1. Install the [linter-reek](https://atom.io/packages/linter-reek) Atom
+   package.
+
+1. Copy the [rubocop](./.rubocop.yml) configuration file to your local
+   directory. We check ours into `.gitignore` since we use the one here via
+   [Code Climate](https://codeclimate.com).
+
+1. Copy the [reek](./config.reek) configuration file to your local
+   directory. We check ours into `.gitignore` since we use the one here via
+   [Code Climate](https://codeclimate.com).
+
+**Vim**
+
+TODO: add specific installation steps.
+- https://github.com/ngmy/vim-rubocop
+- https://github.com/rainerborene/vim-reek
+
+**Emacs**
+
+TODO: add specific installation steps.
+- https://github.com/bbatsov/rubocop-emacs
+https://github.com/hanmoi-choi/reek-emacs
+
 ### General
 
 - Use single quotes over double quotes unless string interpolation is needed.
