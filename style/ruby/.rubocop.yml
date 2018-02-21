@@ -40,7 +40,7 @@ Style/FrozenStringLiteralComment:
 Layout/MultilineOperationIndentation:
   Enabled: false
 Style/ParenthesesAroundCondition:
-  Enabled: false
+  Enabled: true
 Layout/SpaceBeforeFirstArg:
   Enabled: false
 Style/StringLiterals:
