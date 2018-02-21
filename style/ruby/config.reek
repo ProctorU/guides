@@ -9,3 +9,5 @@ TooManyStatements:
   max_statements: 10
 NestedIterators:
   max_allowed_nesting: 3
+UtilityFunction:
+  enabled: false
