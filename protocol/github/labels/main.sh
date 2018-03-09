@@ -57,6 +57,7 @@ do
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Technical Debt","color":"11B3E3"}' $ENDPOINT
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Feature","color":"11B3E3"}' $ENDPOINT
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Bug","color":"11B3E3"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Database","color":"11B3E3"}' $ENDPOINT
 
   # Dependecy
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Dependency: Parent","color":"DBC4FF"}' $ENDPOINT

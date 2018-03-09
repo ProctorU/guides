@@ -50,6 +50,7 @@ for a deeper understanding of Status labels._
 
 - Dependency: Gems
 - Dependency: Packages
+- Type: Database
 
 ### Colors
 
