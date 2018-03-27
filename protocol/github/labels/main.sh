@@ -53,11 +53,11 @@ do
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Status: Blocked","color":"E21C2C"}' $ENDPOINT
 
   # Type
-  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Design","color":"11B3E3"}' $ENDPOINT
-  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Technical Debt","color":"11B3E3"}' $ENDPOINT
-  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Feature","color":"11B3E3"}' $ENDPOINT
-  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Bug","color":"11B3E3"}' $ENDPOINT
-  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Database","color":"11B3E3"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Design","color":"0072b1"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Technical Debt","color":"0072b1"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Feature","color":"0072b1"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Bug","color":"0072b1"}' $ENDPOINT
+  curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Type: Database","color":"0072b1"}' $ENDPOINT
 
   # Dependecy
   curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Dependency: Parent","color":"DBC4FF"}' $ENDPOINT
