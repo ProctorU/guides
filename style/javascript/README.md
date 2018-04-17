@@ -53,6 +53,16 @@ augroup END
 
 - Prefer to exclude jQuery from new projects.
 
+- When jQuery is absolutely necessary (when dealing with old code) and you are assigning variables to jQuery objects, use the dollar sign as a prefix to tell the reader it is a jQuery object, not a DOM object.
+
+    ```es6
+    // bad
+    const uploadButton = $('[data-behavior="upload-avatar"]');
+
+    // good
+    const $uploadButton = $('[data-behavior="upload-avatar"]');
+    ```
+
 - Prefer to auto-bind in the constructor.
 
     ```es6
@@ -69,14 +79,14 @@ augroup END
       }
     }
     ```
- 
+
  - Prefer data-attribute selectors over classes or ids.
- 
+
     ```es6
     // bad
     document.querySelector('.btn-upload');
     document.querySelector('#btn-upload');
-    
+
     // good
     document.querySelector('[data-behavior="upload-avatar"]');
     ```
