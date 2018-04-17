@@ -40,6 +40,63 @@ text editor implementations for Rubocop and Reek.
    directory. We check ours into `.gitignore` since we use the one here via
    [Code Climate](https://codeclimate.com).
 
+**Command Line with Pronto**
+
+With Pronto, you can locally run the same suite as CodeClimate from the comfort of your terminal.
+
+1. Install `pronto`.
+
+    ```bash
+    gem install pronto
+    ```
+
+1. Take care of any dependencies it might say you lack.
+
+1. Install the following gems.
+
+    ```bash
+    gem install pronto-rubocop pronto-reek
+    ```
+
+1. Create a config file in your local directory so you can tell Pronto what to ignore.
+
+    ```bash
+    touch .pronto.yml
+    ```
+
+    ```
+    all:
+      exclude:
+        - 'config/**/*'
+        - 'db/**/*'
+        - 'docs/**/*'
+        - 'fixtures/**/*'
+        - 'node_modules/**/*'
+        - 'public/**/*'
+        - 'test/**/*'
+        - 'tmp/**/*'
+        - 'vendor/**/*'
+    ```
+
+1. Tell your global-level `.gitignore` file not to track `.pronto.yml`.
+
+    ```
+    # Pronto yml
+    .pronto.yml
+    ```
+
+1. Write some code and try it out!
+
+    - `pronto run --commit` (will compare with local master by default)
+
+    - `pronto run --commit origin/master` (to specify where to compare)
+
+1. Finally, make an alias.
+
+    ```bash
+    alias prc='pronto run --commit'
+    ```
+
 **Vim**
 
 TODO: add specific installation steps.
