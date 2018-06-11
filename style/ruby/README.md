@@ -222,6 +222,24 @@ https://github.com/hanmoi-choi/reek-emacs
     end
     ```
 
+- Use [specific assertion functions](http://guides.rubyonrails.org/testing.html#available-assertions)
+  over `assert`. Using these functions gives much more meaningful results when tests fail.
+
+    ```ruby
+
+    # good
+
+    assert_predicate @user, :valid? # on error: expected @user to be valid?
+
+    assert_includes response['message'], 'must be a valid email' # on error: expected response['message'] to include 'must be a valid email`
+
+    # bad
+
+    assert @user.valid? # on error: expected false to be truthy
+
+    assert response['message'].include?('must be a valid email') # on error: expect false to be truthy
+    ```
+
 ### System Tests
 
 ##### Organization
