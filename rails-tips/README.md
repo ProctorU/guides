@@ -55,9 +55,32 @@ instead of
 
     # best, only tries to load one Project and stops if it finds one (fastest)
     Client.find(20).projects.where(status: 'finished').exists?
-  ```
+    ```
 
   [Read more on this topic here.](https://www.ombulabs.com/blog/benchmark/performance/rails/present-vs-any-vs-exists.html)
+
+### Views
+
+- Avoid rendering partials in loops. Instead, render a collection, so Rails only needs to 
+  evaluate the necessary partial one time.
+  
+  Also, cache partials so they don't need to be re-evaluated every page load.
+
+  For example, when rendering a collection (in HAML)
+
+    ```ruby
+    # bad, rails must evaluate the 'user' partial for every record in the collection
+    - users.each do |user|
+      = render partial: 'shared/user'
+ 
+    # good, rails only needs to evaluate the 'user' partial one time
+    = render users, cached: true
+ 
+    # or, if the collection isn't an ActiveRecord Collection (an array, maybe):
+    = render partial: 'shared/user', collection: users, as: :user, cached: true
+    ```
+    
+  [Read more on this topic here.](https://medium.com/@coorasse/partial-rendering-performance-in-rails-101fdfb6ffb9)
 
 ### Benchmarking
 
