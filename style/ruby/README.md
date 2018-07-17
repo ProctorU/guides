@@ -229,7 +229,7 @@ https://github.com/hanmoi-choi/reek-emacs
 
     # good
 
-    assert_predicate @user, :valid? # on error: expected @user to be valid?
+    assert_predicate @user, :valid? # on error: expected @user to not be valid?
 
     assert_includes response['message'], 'must be a valid email' # on error: expected response['message'] to include 'must be a valid email`
 
@@ -239,6 +239,22 @@ https://github.com/hanmoi-choi/reek-emacs
 
     assert response['message'].include?('must be a valid email') # on error: expect false to be truthy
     ```
+
+- Use the negative variations of selector tests if you are testing that a selector is not present.
+  Using the positive form of these selector tests will always make Capybara wait
+  the default selector timeout time, and this includes using these with `assert_not`.
+
+    ```ruby
+
+    # good
+
+    assert page.has_no_content?('Submit') # immediately executes if 'Submit' is not found
+
+    # bad
+
+    assert_not page.has_content?('Submit') # always waits the default Capybara timeout time
+    ```
+
 
 ### System Tests
 
