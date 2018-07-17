@@ -240,9 +240,9 @@ https://github.com/hanmoi-choi/reek-emacs
     assert response['message'].include?('must be a valid email') # on error: expect false to be truthy
     ```
 
-- Use the negative variations of selector tests if you are testing that a selector is not present.
-  Using the positive form of these selector tests will always make Capybara wait
-  the default selector timeout time, and this includes using these with `assert_not`.
+- Use the negative variations of Capybara matchers if you are testing that an element or selector is not present.
+  Using the positive form of these matchers will always make Capybara wait
+  the default matcher timeout time, and this includes using these with `assert_not`.
 
     ```ruby
 
