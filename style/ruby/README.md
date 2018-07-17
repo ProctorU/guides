@@ -255,11 +255,6 @@ https://github.com/hanmoi-choi/reek-emacs
     assert_not page.has_content?('Submit') # always waits the default Capybara timeout time
     ```
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> eada21b... add tip
 ### System Tests
 
 ##### Organization
