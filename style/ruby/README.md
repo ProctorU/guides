@@ -229,7 +229,7 @@ https://github.com/hanmoi-choi/reek-emacs
 
     # good
 
-    assert_predicate @user, :valid? # on error: expected @user to not be valid?
+    assert_predicate @user, :valid? # on error: expected @user to be valid?
 
     assert_includes response['message'], 'must be a valid email' # on error: expected response['message'] to include 'must be a valid email`
 
@@ -256,6 +256,10 @@ https://github.com/hanmoi-choi/reek-emacs
     ```
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eada21b... add tip
 ### System Tests
 
 ##### Organization
