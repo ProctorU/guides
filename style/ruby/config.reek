@@ -11,3 +11,5 @@ NestedIterators:
   max_allowed_nesting: 3
 UtilityFunction:
   enabled: false
+PrimaDonnaMethod:
+  enabled: false
