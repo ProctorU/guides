@@ -109,6 +109,53 @@ TODO: add specific installation steps.
 - https://github.com/bbatsov/rubocop-emacs
 https://github.com/hanmoi-choi/reek-emacs
 
+**RubyMine**
+
+1. Install `rubocop` (`reek` plugin not available, RubyMine provides its own inspections inspired by `reek`)
+
+    ```bash
+    gem install rubocop
+    ```
+
+1. Copy the [rubocop](./.rubocop.yml) configuration file to your local
+   directory. We check ours into `.gitignore` since we use the one here via
+   [Code Climate](https://codeclimate.com).
+
+1. Go to RubyMine `preferences` and search for `rubocop` in `editor->inspections` tab
+
+1. Enable the `rubocop` inspection option
+
+1. Save or Apply your preferences
+
+**RubyMine Debugger**
+
+Some issues with the RubyMine debugger occur due to usage `Rails 5.2+` and `bootsnap` gem, [ruby-debug-ide](https://github.com/ruby-debug/ruby-debug-ide/issues/146)
+
+1. Add monkey patched `debase` gem to `Gemfile`
+
+    ```bash
+    gem 'ruby-debug-ide'
+    gem 'debase', git: 'https://github.com/ViugiNick/debase.git', branch: 'load_iseq_monkeypatch'
+    ```
+
+1. Add the following to your `config/boot.rb`
+
+    ```ruby
+    begin
+      Debugger.mp_load_iseq
+    rescue NameError
+      # Empty
+    end
+    ```
+
+Enable non-default setting involved with *skipping gem inspection* in debugger mode
+
+1. Go to `preferences` then to `Build, Execution, Deployment->Debugger->Stepping`
+
+1. Check `Ignore non-project sources`
+
+1. Save or Apply your preferences
+
 ### General
 
 - Use single quotes over double quotes unless string interpolation is needed.
