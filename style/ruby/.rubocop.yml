@@ -31,6 +31,11 @@ Layout/SpaceBeforeFirstArg:
   Description: Checks that exactly one space is used between a method name and the
     first argument for method calls without parentheses.
   Enabled: false
+Layout/SpaceInLambdaLiteral:
+  Description: Checks that exactly one space is used between the arrow and the
+    parenthesis in a lambda.
+  Enabled: true
+  EnforcedStyle: require_space
 Lint/ParenthesesAsGroupedExpression:
   Description: Checks for method calls with a space before the opening parenthesis.
   Enabled: true

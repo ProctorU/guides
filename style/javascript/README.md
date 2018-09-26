@@ -25,6 +25,18 @@ In additional to the following guidelines, please also install and use [Prettier
       parser: "flow"
       singleQuote: true
    ```
+   
+*VSCode*
+
+1. Install the [`prettier-vscode`](https://github.com/prettier/prettier-vscode) package.
+1. Configure the Settings with the following changes (added to the User Settings).
+
+  ```json
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "prettier.parser": "flow"
+  ```
+
 
 *Vim*
 1. Install the [vim-prettier](https://github.com/prettier/vim-prettier) plugin using [vim-plug](https://github.com/junegunn/vim-plug)
