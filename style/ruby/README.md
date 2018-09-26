@@ -287,6 +287,21 @@ Enable non-default setting involved with *skipping gem inspection* in debugger m
     assert response['message'].include?('must be a valid email') # on error: expect false to be truthy
     ```
 
+- Use the negative variations of Capybara matchers if you are testing that an element or selector is not present.
+  Using the positive form of these matchers will always make Capybara wait
+  the default matcher timeout time, and this includes using these with `assert_not`.
+
+    ```ruby
+
+    # good
+
+    assert page.has_no_content?('Submit') # immediately executes if 'Submit' is not found
+
+    # bad
+
+    assert_not page.has_content?('Submit') # always waits the default Capybara timeout time
+    ```
+
 ### System Tests
 
 ##### Organization
