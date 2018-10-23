@@ -65,6 +65,9 @@ Style/PercentLiteralDelimiters:
   PreferredDelimiters:
     '%i': '()'
     '%w': '()'
+Style/RedundantSelf:
+  Description: Don't use self where it's not needed.
+  Enabled: false
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   Enabled: true
