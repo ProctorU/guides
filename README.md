@@ -16,6 +16,7 @@ much more.
 - [Best Practices](./best-practices)
 - [Code Review](./code-review)
 - [Rails Tips](./rails-tips)
+- [SQL Tips](./sql-tips)
 
 ## Style
 
