@@ -1,5 +1,7 @@
 # https://raw.githubusercontent.com/thoughtbot/hound/master/config/style_guides/ruby.yml
 
+require:
+  - ./extensions/unsafe_migration.rb
 AllCops:
   TargetRubyVersion: 2.3
   Exclude:
@@ -90,4 +92,7 @@ Style/TernaryParentheses:
 Style/Documentation:
   Enabled: true
 Style/MutableConstant:
+  Enabled: true
+Migration/UnsafeMigration:
+  Description: Detects the usage of 'default' column values in database migrations
   Enabled: true
