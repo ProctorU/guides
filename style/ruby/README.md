@@ -220,6 +220,16 @@ Enable non-default setting involved with *skipping gem inspection* in debugger m
       end
     end
     ```
+- Prefer Pundit policies over built-in authorization in controllers:
+    ```ruby
+    # bad
+      before_action { authorize! ['manage-utilities', 'manage-roles'] }, only: %i(index)
+
+    # good
+      def index
+        authorize MyPolicy
+      end
+    ```
 
 ### Testing
 
