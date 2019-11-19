@@ -72,6 +72,10 @@ Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   Enabled: true
   EnforcedStyle: single_quotes
+Style/TrailingCommaInHashLiteral:
+  Description: Use a trailing comma in multi-line hashes.
+  Enabled: true
+  EnforcedStyleForMultiline: comma
 Style/TernaryParentheses:
   Enabled: false
 Style/Documentation:
