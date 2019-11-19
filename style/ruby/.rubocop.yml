@@ -47,6 +47,8 @@ Metrics/LineLength:
   Description: Limit lines to 80 characters.
   Enabled: true
   Max: 100
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
 Style/Alias:
   Description: Use alias_method instead of alias.
   Enabled: true
@@ -63,9 +65,16 @@ Style/PercentLiteralDelimiters:
   Description: Use `%`-literal delimiters consistently.
   Enabled: true
   PreferredDelimiters:
+    default: '()'
     '%i': '()'
     '%w': '()'
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   Enabled: true
   EnforcedStyle: single_quotes
+Style/TernaryParentheses:
+  Enabled: false
+Style/Documentation:
+  Enabled: true
+Style/MutableConstant:
+  Enabled: true
