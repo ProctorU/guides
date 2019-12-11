@@ -11,12 +11,16 @@ Lint/AmbiguousOperator:
   Description: Checks for ambiguous operators in the first argument of a method invocation
     without parentheses.
   Enabled: false
+Layout/AlignArguments:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
 Layout/AlignArray:
   Description: Align the elements of an array literal if they span more than one line.
   Enabled: true
 Layout/AlignHash:
   Description: Align the elements of a hash literal if they span more than one line.
   Enabled: true
+  EnforcedColonStyle: table
 Layout/AlignParameters:
   Description: Align the parameters of a method call if they span more than one line.
   Enabled: true
@@ -25,6 +29,8 @@ Layout/DotPosition:
   Description: Checks the position of the dot in multi-line method calls.
   Enabled: true
   EnforcedStyle: trailing
+Layout/EmptyLineAfterGuardClause: 
+  Enabled: false
 Layout/MultilineOperationIndentation:
   Enabled: false
 Layout/SpaceBeforeFirstArg:
