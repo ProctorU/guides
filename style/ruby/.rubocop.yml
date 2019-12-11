@@ -14,14 +14,14 @@ Lint/AmbiguousOperator:
 Layout/AlignArguments:
   Enabled: true
   EnforcedStyle: with_fixed_indentation
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Description: Align the elements of an array literal if they span more than one line.
   Enabled: true
-Layout/AlignHash:
+Layout/HashAlignment:
   Description: Align the elements of a hash literal if they span more than one line.
   Enabled: true
   EnforcedColonStyle: table
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Description: Align the parameters of a method call if they span more than one line.
   Enabled: true
   EnforcedStyle: with_fixed_indentation
