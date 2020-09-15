@@ -54,7 +54,8 @@ Metrics/AbcSize:
     conditions.
   Enabled: true
 Metrics/MethodLength:
-  CountAsOne: ['array', 'heredoc', 'hash']
+  Enabled: true
+  Max: 25
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Style/Alias:
