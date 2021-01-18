@@ -1,7 +1,7 @@
 # https://raw.githubusercontent.com/thoughtbot/hound/master/config/style_guides/ruby.yml
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.5.8
   Exclude:
     - 'docs/**'
     - 'db/schema.rb'
